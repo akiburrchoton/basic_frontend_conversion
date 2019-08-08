@@ -26,6 +26,15 @@ p {
     color: #ff7d15;
 }
 
+.xb-btn-blue {
+    background-color: #313aaf;
+    width: 200px;
+    border-radius: 0;
+    padding: 20px 0;
+    font-weight: 500;
+    color: white;
+}
+
 /* Top Bar CSS Starting */
 .top-bar {
     background: #ff7d15;
@@ -387,3 +396,72 @@ p {
 
 }
 /* Statistic Area CSS Endting */
+
+
+/* Service Area CSS Starting */
+
+#service{
+    padding: 80px 0;
+}
+.title{
+    text-align: center;
+    padding: 60px 20px;
+}
+.title h6{
+    color: #ff7d15;
+
+}
+
+.service-item{
+    background: #f3f3fb;
+    margin: 80px 20px 0px 0px;
+    position: relative;
+    transition: all .4s;
+}
+
+.service-item .service-img{
+    width: 270px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: -85px;
+    left: 40px;
+}
+
+.service-item button{
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+    transition: all .4s;
+}
+
+.service-item:hover button{
+    right: 0;
+    bottom: 0;
+    background: #ff7d15;
+}
+
+.service-item:hover {
+    padding-bottom: 30px;
+}
+
+.box{
+    width: 170px;
+    height: 80px;
+    background: #ff7d15; 
+    transition: all .4s;
+}
+
+.service-item:hover .box{
+    background: #313aaf;
+}
+
+.content{
+    padding: 50px;
+}
+
+
+
+/* Service Area CSS Ending */
