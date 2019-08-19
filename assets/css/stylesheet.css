@@ -297,7 +297,7 @@ p {
 
 }
 
-.xb-item .xb-icon{
+.xb-item .xb-icon {
     width: 100px;
     height: 100px;
     background: #fceee3;
@@ -308,39 +308,42 @@ p {
     transition: all .4s;
 }
 
-.xb-icon img{
+.xb-icon img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.xb-icon img:nth-child(2){
+
+.xb-icon img:nth-child(2) {
     display: none;
 }
 
-.xb-item:hover .xb-icon{
+.xb-item:hover .xb-icon {
     background: #313aaf;
     transform: translate(0px, -20px);
 }
-.xb-item:hover .xb-icon img:nth-child(1){
+
+.xb-item:hover .xb-icon img:nth-child(1) {
     display: none;
 }
-.xb-item:hover .xb-icon img:nth-child(2){
+
+.xb-item:hover .xb-icon img:nth-child(2) {
     display: inherit;
 }
 
-.xb-item h5{
-    margin:25px;
+.xb-item h5 {
+    margin: 25px;
 }
 
 /* Quality Area CSS Endting */
 
 /* Statistic Area CSS Starting */
-#statistic{
+#statistic {
     position: relative;
 }
 
-.stat-img{
+.stat-img {
     background: url("../image/stats.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -350,14 +353,15 @@ p {
     margin-left: 120px;
 }
 
-.play-btn{
+.play-btn {
     position: absolute;
     background: #313aaf;
     width: 270px;
     height: 270px;
     top: 22%;
 }
-.play-btn .fa-play{
+
+.play-btn .fa-play {
     color: #313aaf;
     background: white;
     width: 90px;
@@ -372,7 +376,7 @@ p {
     font-size: 35px;
 }
 
-.counter{
+.counter {
     background: #ff7d15;
     width: 725px;
     position: absolute;
@@ -385,41 +389,39 @@ p {
     color: white;
 }
 
-.count-item{
+.count-item {}
 
-}
+.count-item h1 {}
 
-.count-item h1{
+.count-item h6 {}
 
-}
-.count-item h6{
-
-}
 /* Statistic Area CSS Endting */
 
 
 /* Service Area CSS Starting */
 
-#service{
+#service {
     padding: 80px 0;
 }
-.title{
+
+.title {
     text-align: center;
     padding: 60px 20px;
 }
-.title h6{
+
+.title h6 {
     color: #ff7d15;
 
 }
 
-.service-item{
+.service-item {
     background: #f3f3fb;
     margin: 80px 20px 0px 0px;
     position: relative;
     transition: all .4s;
 }
 
-.service-item .service-img{
+.service-item .service-img {
     width: 270px;
     height: 150px;
     background-size: cover;
@@ -430,14 +432,14 @@ p {
     left: 40px;
 }
 
-.service-item button{
+.service-item button {
     position: absolute;
     right: -30px;
     bottom: -30px;
     transition: all .4s;
 }
 
-.service-item:hover button{
+.service-item:hover button {
     right: 0;
     bottom: 0;
     background: #ff7d15;
@@ -447,21 +449,344 @@ p {
     padding-bottom: 30px;
 }
 
-.box{
+.box {
     width: 170px;
     height: 80px;
-    background: #ff7d15; 
+    background: #ff7d15;
     transition: all .4s;
 }
 
-.service-item:hover .box{
+.service-item:hover .box {
     background: #313aaf;
 }
 
-.content{
+.content {
     padding: 50px;
 }
 
 
 
 /* Service Area CSS Ending */
+
+/*  Appointment Area CSS Starts */
+
+#appointment{
+    margin-top: 230px;
+    margin-bottom: 150px;
+    background-image: url("../image/appointment.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 440px;
+    position: relative;
+}
+
+#appointment::before{
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(49, 58, 175, 0.85);
+}
+
+
+
+.appointment-img{
+    background-image: url("../image/appointment-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 25%;
+    height: 50%;
+    width: 45%;
+    position: absolute;
+    top: -35%;
+
+}
+.comma-shape{
+    padding: 3px 0;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    height: 60px;
+    width: 60px;
+    background: #ff7d15;
+    border-radius: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    bottom: -25%;
+    left: 50%;
+}
+
+.comma-shape p{
+    position: absolute;
+
+}
+
+.appointment-texts{
+    height: 400px;
+}
+.appointment-texts h2{
+    color: white;
+    font-size: 50px;
+    margin-top: 185px;
+
+}
+
+.appointment-form{
+    margin-top: -155px;
+    color: white;
+}
+
+.form-title{
+    background: #313aaf;
+    height: 155px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+.form-body{
+    background: #ff7d15;
+    align-items: center;
+    padding: 60px;
+}
+input[type=text], input[type=email], select {
+    width: 100%;
+    padding: 20px 30px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 0;
+    border-radius: 1px;
+    box-sizing: border-box;
+    background: #ff9643;
+    color: white;
+  }
+
+  input::placeholder{
+      color: white;
+  }
+  
+  .form-body button {
+    background-color: #313aaf;
+    width: 200px;
+    border-radius: 0;
+    padding: 20px 0;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .form-body button:hover {
+    background: #293094;
+  }
+  
+  .form-body button .fa-arrow-right {
+    margin-left: 10px;
+    transition: all .3s;
+}
+
+.form-body:hover .fa-arrow-right {
+    transform: translate(5px, 0px);
+}
+
+/*  Appointment Area CSS Ends */
+
+
+/* testimonial area CSS starts */
+
+
+#testimonial{
+
+}
+
+.client-items{
+    margin-bottom: 50px;
+}
+
+.client-id{
+    display: inline-flex;
+    margin-bottom: 25px;
+}
+
+.client-image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.client-info{
+    margin-left: 50px;
+}
+
+.client-info h5,p{
+    margin-bottom: 3px;
+}
+
+.client-info .fa-star{
+    color: #ff7d15;
+}
+
+
+.client-info .fa-star:nth-child(4){
+    color: #dfc1a9;
+}
+
+.client-info .fa-star:last-child{
+    color: #dfc1a9;
+}
+.client-text{
+    text-align: justify;
+}
+
+
+/* testimonial area CSS ends */
+
+/* portfolio area CSS starts */
+
+/* portfolio area CSS ends */
+
+
+/* blog area CSS starts */
+
+#blog{
+    margin-bottom: 100px;
+}
+
+.blog-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70% center;
+    height: 470px;
+    position: relative;
+}
+
+.blog-image::after{
+    content: ""; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 170px;
+    background: rgba(49, 58, 175, 0.85);
+    transition: all .3s;
+}
+
+.blog-image:hover::after {
+    content: ""; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 170px;
+    background: rgba(255, 126, 21, 0.85);
+}
+
+.blog-texts{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 30px 45px;
+    z-index: 100;
+}
+/* blog area CSS ends */
+
+/* footer CSS starts */
+#footer{
+    height: 475px;
+    background: #373737;
+    color: white;
+}
+
+
+.footer-sections{
+    padding-top: 100px;
+}
+
+
+.company{
+
+}
+.company p{
+    margin-top: 12px;
+    line-height: 1.9;
+}
+
+.our-service{
+
+}
+.our-service li{
+    list-style-type: none;
+    padding: 5px 0;
+}
+.our-service li a{
+    color: white;
+}
+.our-service li a:hover{
+    text-decoration: none;
+    color: #ff7d15;
+}
+
+.quick-link{
+
+}
+.quick-link li{
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.quick-link li a{
+    color: white;
+}
+.quick-link li a:hover{
+    text-decoration: none;
+    color:#ff7d15;
+}
+
+.get-in-touch{
+
+}
+.get-in-touch li{
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.border{
+    border: 1px solid #616161!important;
+    margin-top: 40px;
+}
+.copy-right{
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.copy-right .fa-copyright{
+    color: #ff7d15;
+    font-size : 15px;
+}
+
+.copy-right a{
+    color: #ff7d15;
+    text-decoration: none;
+}
+.copy-right a:hover{
+    color: #ff9643;
+}
+
+.terms a{
+    color: white;
+}
+.terms a:hover{
+    color: #ff9643;
+}
+
+/* footer CSS ends */
