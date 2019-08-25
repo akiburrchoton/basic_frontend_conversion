@@ -294,7 +294,6 @@ p {
 .xb-item {
     padding: 30px;
     text-align: center;
-
 }
 
 .xb-item .xb-icon {
@@ -305,7 +304,7 @@ p {
     text-align: center;
     margin: 0 auto;
     position: relative;
-    transition: all .4s;
+    transition: all .3s;
 }
 
 .xb-icon img {
@@ -322,6 +321,7 @@ p {
 .xb-item:hover .xb-icon {
     background: #313aaf;
     transform: translate(0px, -20px);
+
 }
 
 .xb-item:hover .xb-icon img:nth-child(1) {
@@ -333,11 +333,27 @@ p {
 }
 
 .xb-item h5 {
-    margin: 25px;
+    margin: 40px 0 15px;
+}
+.xb-item h5,p{
+    transition: all .4s;
 }
 
-/* Quality Area CSS Endting */
+.xb-item:hover h5{
+    transform: scale(1.03);
+    margin-bottom: 18px;
+}
+.xb-item:hover p{
+    transform: scale(1.03);
+    
+}
 
+
+
+/* Quality Area CSS Endting */
+.wow{
+    visibility: hidden;
+}
 /* Statistic Area CSS Starting */
 #statistic {
     position: relative;
@@ -351,7 +367,13 @@ p {
     height: 520px;
     background-position: -160px;
     margin-left: 120px;
+    transition: all .3s;
 }
+#statistic:hover .stat-img{
+    /* margin-left: 90px; */
+    transform: scale(1.06);
+}
+
 
 .play-btn {
     position: absolute;
@@ -391,7 +413,13 @@ p {
 
 .count-item {}
 
-.count-item h1 {}
+.count-item h1{
+    display: inline-block;
+}
+
+.count-item span{
+    
+}
 
 .count-item h6 {}
 
@@ -435,7 +463,7 @@ p {
 .service-item button {
     position: absolute;
     right: -30px;
-    bottom: -30px;
+    bottom: 0;
     transition: all .4s;
 }
 
@@ -445,8 +473,12 @@ p {
     background: #ff7d15;
 }
 
-.service-item:hover {
-    padding-bottom: 30px;
+
+.service-img{
+    transition: all .3s;
+}
+.service-item:hover .service-img{
+    transform: scale(1.03);
 }
 
 .box {
@@ -461,7 +493,7 @@ p {
 }
 
 .content {
-    padding: 50px;
+    padding: 50px 50px 100px;
 }
 
 
@@ -652,6 +684,24 @@ input[type=text], input[type=email], select {
 
 /* portfolio area CSS starts */
 
+#portfolio{
+    margin: 100px 0;
+
+    height: 100%
+}
+
+.shape1{
+    height: 250px;
+    background-color: #ff7d15;
+    margin: 0 auto;
+    position: relative;
+}
+
+.shape2{
+    background-color: #293094;
+    height: 200px;
+}
+
 /* portfolio area CSS ends */
 
 
@@ -789,4 +839,62 @@ input[type=text], input[type=email], select {
     color: #ff9643;
 }
 
+
+
+@media screen and (max-width: 576px) {
+    #portfolio {
+        margin: 30px 0;
+        height: 100%;
+    }
+    
+    #footer{
+        height: 100%;
+        width: 100%;
+        background: #373737;
+        color: white;
+        
+    }
+
+    .company{
+        margin-bottom: 25px;
+    }
+    .company p{
+        padding: 0 40px 0 0;
+        text-align: justify;
+        
+    }
+
+    .blog-image{
+        margin-bottom: 30px;
+    }
+
+    .title{
+        text-align: center;
+    padding: 30px 20px;
+    }
+
+    .copy-right p{
+        padding-right: 92px;
+    }
+
+    .footer-sections {
+        padding-top: 30px;
+    }
+
+    .border {
+        border: 1px solid #616161!important;
+        margin-top: 0;
+    }
+
+  }
 /* footer CSS ends */
+
+::-moz-selection { /* Code for Firefox */
+    /* color: red; */
+    background: #ff7d15;
+  }
+  
+  ::selection {
+    /* color: red; */
+    background: #ff7d15;
+  }
