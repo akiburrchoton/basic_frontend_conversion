@@ -14,7 +14,12 @@
   <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
+  <!-- fancybox css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/stylesheet.css">
 
@@ -108,15 +113,15 @@
       <div class="row">
         <div class="col-sm">
           <div class="banner-contents ">
-            <h1>Experts are here to<br>
+            <h1 class="wow pulse">Experts are here to<br>
               solve <span>your business</span><br>
               problems.
             </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent<br>
+            <p class="wow fadeInLeft delay-1s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent<br>
               sagittis purus in mauris efficitur, ac luctus nulla tincidunt.
             </p>
             <a href="">
-              <button class="btn xb-btn-orange">Discover More</button>
+              <button class="btn xb-btn-orange wow fadeInLeft delay-2s">Discover More</button>
             </a>
           </div>
 
@@ -138,18 +143,19 @@
 
   <!-- Banner Area Ending -->
 
+
   <!-- Quality Area Starting -->
   <section id="quality">
     <div class="container">
       <div class="row">
-        <div class="col-sm">
-          <div class="xb-item">
+        <div class="col-sm"> 
+          <div class="xb-item wow pulse delay-1s">
             <div class="xb-icon">
               <img src="assets/image/bulb.png" alt="bulb">
               <img src="assets/image/bulb-rev.png" alt="bulb">
             </div>
-
-            <h5>High Quality Services</h5>
+            
+            <h5 >High Quality Services</h5>
             <p>Duis congue metus sed eros tempor,
               sed sodales eros consectetur. Vivamus vel arcu
               nec nibh tincidunt rhoncus sit amet
@@ -157,7 +163,7 @@
           </div>
         </div>
         <div class="col-sm">
-          <div class="xb-item">
+          <div class="xb-item wow pulse delay-2s">
             <div class="xb-icon">
               <img src="assets/image/hourglass.png" alt="hourglass">
               <img src="assets/image/hourglass-rev.png" alt="bulb">
@@ -171,7 +177,7 @@
           </div>
         </div>
         <div class="col-sm">
-          <div class="xb-item">
+          <div class="xb-item wow pulse delay-3s">
             <div class="xb-icon">
               <img src="assets/image/gear.png" alt="gear">
               <img src="assets/image/gear-rev.png" alt="bulb">
@@ -196,21 +202,23 @@
         <div class="col-sm">
           <div class="stat-img"></div>
           <div class="play-btn">
-            <i class="fas fa-play"></i>
+            <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+              <i class="fas fa-play"></i>
+            </a>
           </div>
         </div>
         <div class="col-sm">
           <div class="counter">
             <div class="count-item">
-              <h1>8965</h1>
+              <h1 class="counter-num">8965</h1>
               <h6>Finished Project</h6>
             </div>
             <div class="count-item">
-              <h1>568+</h1>
+              <h1 class="counter-num">568</h1><span style="font-size: 32px;"><strong>+</strong></span>
               <h6>Happy Clients</h6>
             </div>
             <div class="count-item">
-              <h1>253+</h1>
+              <h1 class="counter-num">253</h1><span style="font-size: 32px;"><strong>+</strong></span>
               <h6>Team Members</h^>
             </div>
           </div>
@@ -229,7 +237,7 @@
         <div class="col-sm-12">
           <div class="title">
             <h6>What We Do?</h6>
-            <h1>Awesome Services</h1>
+            <h1 class="wow pulse">Awesome Services</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis felis lacus, dictum at dui vel,
               accumsan viverra dui.<br>
               Proin tempor mauris eget mi cursus dignissim eu ut felis. Nullam et risus dolor.</p>
@@ -304,7 +312,7 @@
   <!-- Service Area Endting -->
 
 
-  <!-- Appointment Area Starts -->
+  <!-- Appointment Form Area Starts -->
 
   <section id="appointment">
     <div class="appointment-img">
@@ -315,14 +323,13 @@
       <div class="row">
 
         <div class="col-sm">
-          <div class="appointment-texts">
-            <h2>We are a consulting<br>better company for<br>any business.</h2>
+          <div class="wow pulse delay-1s appointment-texts">
+            <h2 >We are a consulting<br>better company for<br>any business.</h2>
           </div>
         </div>
 
-
         <div class="col-sm">
-          <div class="appointment-form">
+          <div class="appointment-form wow fadeInRight">
             <div class="form-title">
               <h1>Books an<br>Appointment</h1>
             </div>
@@ -358,7 +365,7 @@
         <div class="col-sm-12">
           <div class="title">
             <h6>Happy Customer!</h6>
-            <h1>What Clients Say?</h1>
+            <h1 class="wow pulse">What Clients Say?</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis felis lacus, dictum at dui vel,
               accumsan viverra dui.<br>
               Proin tempor mauris eget mi cursus dignissim eu ut felis. Nullam et risus dolor.</p>
@@ -385,7 +392,7 @@
 
             </div>
 
-            <div class="client-text">
+            <div class="client-text wow fadeInLeft">
               <p>
                 Nulla congue, sem eu dapibus ornare, turpis lectus cursus eros, in finibus odio velit
                 a dui. Integer imperdiet, enim ac consequat sagittis, erat libero vehicula lacus, quis
@@ -418,7 +425,7 @@
 
             </div>
 
-            <div class="client-text">
+            <div class="client-text wow fadeInRight delay-1s">
               <p>
                 Nulla congue, sem eu dapibus ornare, turpis lectus cursus eros, in finibus odio velit
                 a dui. Integer imperdiet, enim ac consequat sagittis, erat libero vehicula lacus, quis
@@ -449,7 +456,7 @@
 
             </div>
 
-            <div class="client-text">
+            <div class="client-text wow fadeInLeft">
               <p>
                 Nulla congue, sem eu dapibus ornare, turpis lectus cursus eros, in finibus odio velit
                 a dui. Integer imperdiet, enim ac consequat sagittis, erat libero vehicula lacus, quis
@@ -480,7 +487,7 @@
 
             </div>
 
-            <div class="client-text">
+            <div class="client-text wow fadeInRight delay-1s">
               <p>
                 Nulla congue, sem eu dapibus ornare, turpis lectus cursus eros, in finibus odio velit
                 a dui. Integer imperdiet, enim ac consequat sagittis, erat libero vehicula lacus, quis
@@ -500,19 +507,45 @@
 
   <!-- Portfolio Area Starts  -->
 
+  <!-- <div id="portfolio">
+    <div class="shape">
+      <div class="row-fluid no-gutters">
+        <div class="col-sm-7">
+          <div class="shape1">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-5" >
+          
+              </div>
+              <div class="col-sm-7">
+                <div class="shape2">
+      
+                </div>
+              </div>
+        </div>
+
+      </div>
+    </div>
+  </div> -->
 
   <!-- Portfolio Area Ends  -->
 
 
 
   <!-- Blog area Starts -->
+
   <div id="blog">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <div class="title">
             <h6>News & Update</h6>
-            <h1>Latest News</h1>
+            <h1 class="wow pulse">Latest News</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis felis lacus, dictum at dui vel,
               accumsan viverra dui.<br>
               Proin tempor mauris eget mi cursus dignissim eu ut felis. Nullam et risus dolor.
@@ -612,7 +645,8 @@
       <div class="container">
         <div class="row">
             <div class="col-sm-9">
-                <p>Copyright <i class="far fa-copyright"></i> 2019; All Right Reserved Coded by <a href="https://www.fiverr.com/akiburrchoton">Akibur Rahman</a></p>
+                <p>Copyright <i class="far fa-copyright"></i> 2019; All Right Reserved Coded by <a href="">Akibur Rahman</a></p>
+                <p>Get me in <a href="https://www.upwork.com/fl/akiburrchoton"><strong>Upwork</strong></a> & <a href="https://www.fiverr.com/akiburrchoton"> <strong>fiverr</strong></a></p>
               </div>
               <div class="col-sm-3 terms">
                 <p> <a href="">Terms & Condition</a> | <a href="">Privacy Policy</a></p>
@@ -623,6 +657,7 @@
 
 
   </div>
+
   <!-- Footer Area Ends -->
 
 
@@ -632,19 +667,25 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+  <!-- wow js -->
+  <script src="assets/js/wow.min.js"></script>
+              
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/bc546167b7.js"></script>
 
+  <!-- fancybox JS -->
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+  <script src="assets/js/jquery.counterup.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
